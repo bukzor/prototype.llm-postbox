@@ -9,18 +9,18 @@ ontology:
   - inbox
   - read
   - record
+  - draft
 stale-when: a commitment that is not the postbox design's — implementation
   detail with no contestable standing, or another subject's claims, filed
   here
 ---
 
-# The postbox design, as a ledger
+# The postbox design
 
-`design.kb/` holds what the design commits to, one claim per file with
-its label and standing. The design prose — the convention, its
-`[!TODO]` surface, the transport decision point and its kill records —
-is `../../../design.kb/` at the repo root; this ledger is the standing
-behind that prose, and the place to argue with it.
+The design's single home: what the postbox commits to, one claim per
+file, the owner's vetoes as struck claims beside the winners. Status:
+fully ruled (2026-08-28..29); nothing implemented. The work queue over
+it is `../../../.claude/todo.md`.
 
 The root coins the mail objects; under it, `MUTABLE_UNTIL_READ` states
 the invariant in root vocabulary alone, and three theories argue on
@@ -30,18 +30,22 @@ top, each in its own:
 |---|---|---|
 | `DELIVERY` | delivery is the recipient's act | push, pull, boundary, pointer |
 | `LIVE` | a live channel wakes; the postbox carries | live channel, wake, wake phrase |
-| `TOPOLOGY` | where mail lives is a path question | reader, address, mount, graft |
+| `TOPOLOGY` | where mail lives is a path question | reader, address, mount, graft, roster |
 
 ## Standing
 
 ```bash
 grep -rH '^standing:' design.kb/    # every claim, signed
-grep -rl 'verdict:' design.kb/      # what a judgment took out of force
+grep -rl '^verdict:' design.kb/     # the kills — load-bearing, not debris
 ```
 
-Three claims carry the owner's `!` — the invariant
-(`MUTABLE_UNTIL_READ`), the transport direction (`PULL_DELIVERY`), the
-runtime root (`RUNTIME_ROOT`) — each naming its ruling in `authority:`.
-The `agent` set is the veto surface: judgments made on the owner's
-behalf, standing until vetoed. The bare set is facts and derivations;
-arguing with one means arguing with its premises or its check.
+Rulings are quoted in `authority:` at the claim they govern. The
+struck claims hold the grounds each dead alternative died on: skipping
+them re-proposes dead ideas and re-pays the litigation.
+
+## Narrative address
+
+The design emerged in
+`~/claude/how-to-claude-code/findings/2026-08-28-usage-review.md`
+("Amendments") and session `c80a6431-2ca1-41a9-82ee-b01b7f91a4dc`
+under `~/.claude/projects/-home-bukzor-claude-how-to-claude-code/`.

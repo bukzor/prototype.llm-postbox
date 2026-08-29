@@ -8,8 +8,8 @@ why:
 # The vetoed failure modes are one choice: push-into-context
 
 The owner's three grounds for declining SendMessage — inane sends,
-recipient distraction, unrewindable receipt
-(`../../../../../design.kb/transport.kb/sendmessage.md`) — are each a
+recipient distraction, unrewindable receipt (quoted verbatim in
+SENDMESSAGE) — are each a
 consequence of push-into-context delivery. Inane sends are cheap
 because the sender needs no consent to occupy the recipient's context;
 distraction is guaranteed because delivery is an interrupt; rewind

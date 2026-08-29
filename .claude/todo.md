@@ -2,14 +2,15 @@
 managed-by: Skill(llm-subtask)
 ---
 
-Scope: the postbox prototype. `design.kb/convention.md`'s `[!TODO]`
-blocks are the normative surface; this list is the work queue over it.
+Scope: the postbox prototype. The claim ledger
+(`docs/dev/claims.kb/design.md`) is the normative surface; this list
+is the work queue over it.
 
 - [ ] Core protocol: postbox root resolution
       (`<root>/.local/state/llm-postbox/`, cwd-grafted XDG, plain XDG
       outside repos), message naming (`<timestamp>-<from>-<slug>.md`),
       `read/` move on consume
-- [ ] Trigger-bank entries via Skill(llm-triggers): hand-off, boundary
+- [ ] Trigger-bank entries via skill://llm-triggers: hand-off, boundary
       inbox check, live-channels-carry-no-content
 - [ ] Global gitignore of `.local/` via `core.excludesFile`
 - [ ] Permission scoping: within-project postbox writes allowed,

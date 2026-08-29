@@ -10,8 +10,7 @@ authority: 'owner rulings 2026-08-29: cwd-grafted XDG layout; "ah no
 The postbox lives at `<root>/.local/state/llm-postbox/`, where
 `<root>` is the nearest enclosing `.git/` walking up from `$CWD`;
 outside any repo the graft degrades to genuine XDG,
-`~/.local/state/llm-postbox/`. `state`, not `share`: mail is transient
-runtime data. The declined alternatives and their grounds — bare
-`postbox/`, `.claude/postbox/`, `postbox.kb/`, `share`, `spool` — are
-recorded in `../../../../../design.kb/convention.md` (runtime location
-why-nots).
+`~/.local/state/llm-postbox/`. `.local/` is ignored once, globally
+(`core.excludesFile`), never per-repo. The graft is what buys both
+properties at once: mail sits with the work it concerns, and the
+layout stays the standard one wherever no repo encloses it.

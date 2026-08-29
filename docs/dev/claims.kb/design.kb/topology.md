@@ -6,6 +6,7 @@ ontology:
   - address
   - mount
   - graft
+  - roster
 ---
 
 # Where mail lives is a path question
