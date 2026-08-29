@@ -13,9 +13,9 @@ implemented.
 
 Re-entry for a cold agent: `design.kb/CLAUDE.md`.
 
-Collections: `design.kb/` is the design prose; `docs/dev/design.claims.md`
-+ `.kb/` is its claim ledger — the commitments with their standing, the
-place to argue with the design (`Skill(llm-claims-kb)`).
+Collections: `design.kb/` is the design prose; its claim ledger is
+`docs/dev/claims.kb/design.md` + `.kb/` — the commitments with their
+standing, the place to argue with the design (`Skill(llm-claims-kb)`).
 
 ## Current Work
 

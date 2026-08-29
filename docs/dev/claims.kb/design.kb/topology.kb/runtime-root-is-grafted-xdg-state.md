@@ -13,5 +13,5 @@ outside any repo the graft degrades to genuine XDG,
 `~/.local/state/llm-postbox/`. `state`, not `share`: mail is transient
 runtime data. The declined alternatives and their grounds — bare
 `postbox/`, `.claude/postbox/`, `postbox.kb/`, `share`, `spool` — are
-recorded in `../../../design.kb/convention.md` (runtime location
+recorded in `../../../../../design.kb/convention.md` (runtime location
 why-nots).

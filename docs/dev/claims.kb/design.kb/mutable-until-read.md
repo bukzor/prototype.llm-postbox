@@ -15,6 +15,4 @@ the transition happens exactly once, at read time.
 
 This is the design's non-negotiable: every mechanism — hook, CLI,
 mount, monitor — is checked against it before adoption
-(`../../../design.kb/convention.md`). Push transports fail it
-structurally: content in flight can be neither reviewed nor retracted
-once sent.
+(`../../../../design.kb/convention.md`).

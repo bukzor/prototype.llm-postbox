@@ -2,7 +2,7 @@
 label: WAKE_PHRASE
 standing: bare
 why:
-  - mutable-until-read.md
+  - ../mutable-until-read.md
   - wake-arrives-as-the-user.md
 ---
 
