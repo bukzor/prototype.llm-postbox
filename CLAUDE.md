@@ -13,6 +13,10 @@ implemented.
 
 Re-entry for a cold agent: `design.kb/CLAUDE.md`.
 
+Collections: `design.kb/` is the design prose; `docs/dev/design.claims.md`
++ `.kb/` is its claim ledger — the commitments with their standing, the
+place to argue with the design (`Skill(llm-claims-kb)`).
+
 ## Current Work
 
 Check `.claude/todo.md` for active efforts. Load `Skill("llm-subtask")`
