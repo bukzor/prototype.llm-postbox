@@ -10,6 +10,7 @@ ontology:
   - read
   - record
   - draft
+  - worker
 stale-when: a commitment that is not the postbox design's — implementation
   detail with no contestable standing, or another subject's claims, filed
   here

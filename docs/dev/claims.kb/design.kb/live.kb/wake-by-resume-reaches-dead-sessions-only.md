@@ -3,6 +3,7 @@ label: WAKE_DEAD_ONLY
 standing: agent
 why:
   - live-channels-carry-the-wake-phrase-only.md
+  - ../a-worker-is-an-ordinary-session.md
 ---
 
 # Wake-by-resume reaches dead sessions only
