@@ -3,7 +3,7 @@ label: POINTERS_ONLY
 standing: bare
 why:
   - ../mutable-until-read.md
-  - delivery-is-a-read-at-a-boundary.md
+  - delivery-is-a-read-at-a-task-boundary.md
 ---
 
 # Notification carries the pointer, never the body

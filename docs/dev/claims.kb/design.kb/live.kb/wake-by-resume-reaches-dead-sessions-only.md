@@ -4,7 +4,7 @@ standing: agent
 why:
   - live-channels-carry-the-wake-phrase-only.md
   - ../a-worker-is-an-ordinary-session.md
-  - ../the-design-is-foolproofing-not-security.md
+  - ../trust.kb/the-design-is-foolproofing-not-security.md
 ---
 
 # Wake-by-resume reaches dead sessions only

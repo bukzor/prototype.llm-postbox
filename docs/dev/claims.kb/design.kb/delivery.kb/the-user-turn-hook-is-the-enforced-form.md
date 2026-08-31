@@ -2,7 +2,7 @@
 label: TURN_HOOK
 standing: agent
 why:
-  - delivery-is-a-read-at-a-boundary.md
+  - delivery-is-a-read-at-a-task-boundary.md
   - notification-carries-the-pointer.md
 ---
 

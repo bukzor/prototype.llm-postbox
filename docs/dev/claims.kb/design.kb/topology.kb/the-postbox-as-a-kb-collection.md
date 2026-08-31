@@ -1,5 +1,5 @@
 ---
-label: POSTBOX_KB
+label: MAIL_AS_KB
 standing: agent
 verdict: declined
 why:
