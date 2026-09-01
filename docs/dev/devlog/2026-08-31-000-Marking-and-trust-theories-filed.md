@@ -89,6 +89,35 @@ disagreement stated in its body rather than papered over.
   documentation convention, and `INTEGRATION_HOME` already routes that
   class of artifact to `~/.claude`.
 
+## Judgment calls open to veto
+
+The ledger's own review queue is `grep -rl '^standing: agent'` (28
+files). These are the calls that queue does *not* announce on its own,
+because the file records the decision without recording that it was a
+choice:
+
+- **`POSTBOX` widened by `driver` and `orchestrator`** to coin what
+  `ROLES_POSITIONAL` fixes. Widening an ontology is a revision to the
+  defining claim and wants a signature.
+- **Two stipulations uniquified.** `DELIVERY`'s `boundary` →
+  `task boundary` was forced: the confinement audit names the
+  head-noun truncation, and `TRUST` needs the bare word in the
+  containing sense. `TOPOLOGY`'s `reader` → `single reader` was *not*
+  forced — it freed the ordinary word for `MARKING`'s use, and the
+  alternative was rewording three `marking.kb` claims instead.
+- **Two theory-level imports added** — `live.md` → `trust.md`, and
+  `delivery.md` → `topology.md`. Both theories were already saying the
+  other's words with only a claim-level `why:`, which does not license.
+  An import asserts support at theory grain, which is stronger than
+  what the claim-level arrow said; if that overstates it, the repair is
+  rewording one sentence in each.
+- **Two labels renamed** under the no-prefix rule: `WRAPPER` →
+  `WRAPPER_MARKS` (it prefixed `WRAPPER_ONLY`), and the pre-existing
+  `POSTBOX_KB` → `MAIL_AS_KB`.
+- **`READING_RULE` carries `todo: true`**, which the chat render did
+  not have. The rule applied: mark the claims naming an artifact to
+  build, leaving notation claims like `TAG_FORM` untensed.
+
 ## References
 
 - `../claims.kb/design.md` — the ledger roll-up and re-entry point
