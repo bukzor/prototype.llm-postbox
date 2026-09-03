@@ -10,8 +10,9 @@ why:
 # The user-turn hook is the enforced form
 
 The eventual mechanical form of PULL_DELIVERY: a prompt-time hook
-injects unread-mail pointers at the turn boundary, so "rewind to just
-before receipt" holds by construction rather than by convention. It
+injects unread-mail pointers at the turn boundary, so that "rewind to
+just before receipt" would hold by construction rather than by
+convention. That it does is the REWIND probe, not yet run. It
 must stay silent when the inbox is empty, because whatever it adds is
 re-read on every later turn at a measured factor near 300
 (HOOK_NOISE), and it never injects bodies (POINTERS_ONLY).

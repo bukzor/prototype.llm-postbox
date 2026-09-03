@@ -18,6 +18,9 @@ normative surface; this list is the work queue over it.
 - [ ] Answer the architecture's open question: the smallest mechanism
       delivering the goals on sessions plus a filesystem plus a process
       table. Existing mechanisms are admissible now (FRESH)
+  - [ ] Run REWIND and UNINTERRUPTED against both channel candidates,
+        CHANNEL_IS_POSTBOX and SENDMESSAGE; neither has been shown to
+        meet them (owner, 2026-09-03)
 - [ ] Probe whether claude-code's Bash sandbox is a boundary a delegate
       cannot edit around (TRUST's stale-when; GRADER_SAFE reads as
       foolproofing until then)

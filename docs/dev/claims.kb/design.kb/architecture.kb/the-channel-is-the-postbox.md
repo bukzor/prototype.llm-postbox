@@ -22,3 +22,8 @@ design rather than evidence beside it. It stands agent-signed while
 the architecture's question is open: if a different shape answers
 that question, this claim takes a verdict and POSTBOX goes with it,
 and nothing else in the tower moves.
+
+Its contending answer is SENDMESSAGE, open since 2026-09-03. The
+owner leans here, for the version control, audit, and control a
+filesystem gives, and holds that neither candidate has yet been shown
+to meet REWIND or UNINTERRUPTED.

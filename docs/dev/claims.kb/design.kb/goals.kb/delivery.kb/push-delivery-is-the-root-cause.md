@@ -18,5 +18,7 @@ Peer-session receiving has since grown an owner-side hold and refuse
 (RECEIVE_UNGATED), which moves the cost to the owner as a dialog and
 throttles loops, but leaves the recipient's Claude no choice of moment
 and rewind untouched; within a session delivery is still automatic.
-So no configuration rescues push for the recipient; inverting to pull
-dissolves all three at once rather than patching them severally.
+So no configuration rescues push for the recipient, and inverting to
+pull removes the common cause. Whether the postbox's pull then meets
+REWIND and UNINTERRUPTED is unshown, and the owner holds that open
+(SENDMESSAGE).

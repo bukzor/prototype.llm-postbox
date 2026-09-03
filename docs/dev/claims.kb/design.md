@@ -9,6 +9,7 @@ non-claim-tokens:
   - HTML
   - JSONL
   - NOTE
+  - OPEN
   - QUESTION
   - S3
   - TODO
