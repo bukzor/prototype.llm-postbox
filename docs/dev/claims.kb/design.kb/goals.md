@@ -7,8 +7,6 @@ ontology:
   - record
   - artifact
   - channel
-  - message
-  - read
 why:
   - mission.md
 ---
@@ -33,11 +31,12 @@ Words this rung stipulates:
   what it claims about itself;
 - a **channel** is a path by which a delegator and a running delegate
   exchange messages, distinct from the path by which artifacts return;
-- a **message** is what travels a channel, as distinct from an
-  artifact;
-- a message is **read** at the moment its recipient takes it into
-  context, which is the moment it stops being the sender's
-  (MUTABLE_UNTIL_READ).
+
+Two ordinary words carry a fixed sense here without being stipulated,
+because the person's quoted rulings use them freely: a *message* is
+what travels a channel, as distinct from an artifact, and a message is
+*read* at the moment its recipient takes it into context, which is the
+moment it stops being the sender's (MUTABLE_UNTIL_READ).
 
 The mechanism is good exactly as far as it improves an exchange rate
 (EXCHANGE); every other goal here is a way of improving one of its
