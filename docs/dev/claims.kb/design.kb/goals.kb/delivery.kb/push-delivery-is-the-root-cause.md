@@ -9,11 +9,14 @@ why:
 # The vetoed failure modes are one choice: push-into-context
 
 The owner's three grounds for declining SendMessage — inane sends,
-recipient distraction, unrewindable receipt (quoted verbatim in
-SENDMESSAGE) — are each a
-consequence of push-into-context delivery. Inane sends are cheap
+recipient distraction, unrewindable receipt (PUSH_GROUNDS) — are each
+a consequence of push-into-context delivery. Inane sends are cheap
 because the sender needs no consent to occupy the recipient's context;
 distraction is guaranteed because delivery is an interrupt; rewind
 cannot excise a message that was never a discrete, skippable event.
-With receiving ungated, no configuration rescues push; inverting to
-pull dissolves all three at once rather than patching them severally.
+Peer-session receiving has since grown an owner-side hold and refuse
+(RECEIVE_UNGATED), which moves the cost to the owner as a dialog and
+throttles loops, but leaves the recipient's Claude no choice of moment
+and rewind untouched; within a session delivery is still automatic.
+So no configuration rescues push for the recipient; inverting to pull
+dissolves all three at once rather than patching them severally.

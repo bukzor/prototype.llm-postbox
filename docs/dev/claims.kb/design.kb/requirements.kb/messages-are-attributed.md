@@ -19,4 +19,7 @@ The substrate makes this necessary: text pushed into a session lands
 as the owner's turn (WAKE_WEARS_AUTHORITY), so without a mark the
 delegate supplies the person's authority to everything. The mechanism
 that satisfies it is the postbox's marking theory, MARKING, which
-this requirement is what it satisfies.
+this requirement is what it satisfies. Prior art: the built-in
+SendMessage already attributes a message to the sending session and
+bars it from approving anything, so the requirement is needed on the
+routes that transport does not cover, resume and keystrokes.
