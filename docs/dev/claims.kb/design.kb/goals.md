@@ -30,7 +30,7 @@ Words this rung stipulates:
 - an **artifact** is what a job produces at an address, as distinct from
   what it claims about itself;
 - a **channel** is a path by which a delegator and a running delegate
-  exchange messages, distinct from the path by which artifacts return;
+  exchange messages, distinct from the path by which artifacts return.
 
 Two ordinary words carry a fixed sense here without being stipulated,
 because the person's quoted rulings use them freely: a *message* is
