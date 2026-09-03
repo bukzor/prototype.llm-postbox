@@ -1,0 +1,56 @@
+#!/usr/bin/env python3
+"""Hook noise over the last N days of ~/.claude/projects transcripts.
+
+Three figures, chars/4 as tokens:
+  injected  -- text hooks put into context (hook_success attachment `content`)
+  stdout    -- hook stdout recorded but not necessarily injected
+  trace     -- `+ $ cmd` trace lines inside Bash tool results (the Bash hook's echo)
+Each also as "re-read": chars x assistant turns that followed it in the same session,
+which is what the model actually re-reads.
+"""
+import sys, os, json, glob, time, re, collections
+days = float(sys.argv[1]) if len(sys.argv) > 1 else 21
+cutoff = time.time() - days * 86400
+root = os.path.expanduser('~/.claude/projects')
+files = [f for f in glob.glob(os.path.join(root, '*', '**', '*.jsonl'), recursive=True)
+         if os.path.getmtime(f) >= cutoff and 'two-resumes' not in f]
+trace = re.compile(r'^\++ \$ .*$', re.M)
+inj = collections.Counter(); inj_rr = collections.Counter(); out = collections.Counter(); n = collections.Counter()
+tr = 0; tr_rr = 0; rem = 0; rem_rr = 0; turns = 0
+for f in files:
+    recs = []
+    with open(f, errors='replace') as fh:
+        for l in fh:
+            if '"hook_success"' in l or '"tool_result"' in l or 'system-reminder' in l or '"type":"assistant"' in l:
+                try: recs.append(json.loads(l))
+                except Exception: pass
+    # assistant turns after each index
+    is_asst = [r.get('type') == 'assistant' for r in recs]
+    after = [0] * (len(recs) + 1)
+    for i in range(len(recs) - 1, -1, -1):
+        after[i] = after[i + 1] + (1 if is_asst[i] else 0)
+    turns += after[0]
+    for i, r in enumerate(recs):
+        t = r.get('type')
+        if t == 'attachment' and (r.get('attachment') or {}).get('type') == 'hook_success':
+            a = r['attachment']; k = (a.get('hookEvent'), a.get('hookName'))
+            c = len(a.get('content') or ''); s = len(a.get('stdout') or '')
+            n[k] += 1; inj[k] += c; inj_rr[k] += c * after[i + 1]; out[k] += s
+        elif t == 'user':
+            m = r.get('message') or {}
+            for b in (m.get('content') if isinstance(m.get('content'), list) else []):
+                if not isinstance(b, dict): continue
+                if b.get('type') == 'tool_result':
+                    cc = b.get('content'); txt = cc if isinstance(cc, str) else ' '.join(x.get('text', '') for x in cc if isinstance(x, dict)) if isinstance(cc, list) else ''
+                    c = sum(len(x) + 1 for x in trace.findall(txt)); tr += c; tr_rr += c * after[i + 1]
+                if b.get('type') == 'text':
+                    for x in re.findall(r'<system-reminder>(.*?)</system-reminder>', b.get('text', ''), re.S):
+                        rem += len(x); rem_rr += len(x) * after[i + 1]
+K = lambda c: f'{c/4/1e6:6.2f} Mtok'
+print(f'files={len(files)} days={days} assistant_turns={turns}')
+print('hook_success by (event, hook): count / injected / injected re-read / stdout')
+for k in sorted(n, key=lambda k: -inj_rr[k]):
+    print(f'  {k}: {n[k]} / {K(inj[k])} / {K(inj_rr[k])} / {K(out[k])}')
+print(f'hook injected total: {K(sum(inj.values()))}  re-read: {K(sum(inj_rr.values()))}')
+print(f'bash trace lines:    {K(tr)}  re-read: {K(tr_rr)}')
+print(f'system-reminders:    {K(rem)}  re-read: {K(rem_rr)}')
