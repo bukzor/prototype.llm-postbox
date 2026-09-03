@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+# Two concurrent `claude -p --resume` on one session: does the transcript corrupt, fork, or serialize?
+set -u
+cd "$(git -C "$(dirname "$0")" rev-parse --show-toplevel)" && mkdir -p trash/two-resumes && cd trash/two-resumes
+SID=$(uuidgen); echo "SID=$SID" | tee sid.txt
+# </dev/null matters: `claude -p` appends whatever is on stdin to the prompt, and the first
+# child would otherwise eat the rest of the calling script.
+run() { env -u CLAUDECODE -u CLAUDE_CODE_ENTRYPOINT claude -p --model haiku --output-format json "$@" </dev/null; }
+show() { python3 -c 'import sys,json;d=json.load(open(sys.argv[1]));print({k:d.get(k) for k in("result","session_id","is_error","num_turns")})' "$1" 2>/dev/null || { echo "RAW:"; cat "$1"; }; }
+echo "--- seed"; run --session-id "$SID" 'Reply with exactly one word: seed' > out.seed.json 2> err.seed; echo "seed exit=$?"; show out.seed.json; cat err.seed
+P=$(ls -d ~/.claude/projects/*prototype-llm-postbox-trash-two-resumes 2>/dev/null | head -1); echo "P=$P"; wc -l "$P"/*.jsonl 2>/dev/null
+echo "--- concurrent"
+( run --resume "$SID" 'Reply with exactly one word: alpha' > out.alpha.json 2> err.alpha; echo "alpha exit=$?" ) &
+( run --resume "$SID" 'Reply with exactly one word: bravo' > out.bravo.json 2> err.bravo; echo "bravo exit=$?" ) &
+wait
+for w in alpha bravo; do echo "-- $w"; show out.$w.json; cat err.$w; done
+wc -l "$P"/*.jsonl
+echo "--- third"; run --resume "$SID" 'List every one-word reply you have given in this conversation so far, in order, comma-separated, nothing else.' > out.third.json 2> err.third; echo "third exit=$?"; show out.third.json; cat err.third
+echo "--- transcript chain"
+python3 - "$P" <<'PY'
+import sys,json,glob,os
+for f in sorted(glob.glob(os.path.join(sys.argv[1],'*.jsonl'))):
+    print('==',os.path.basename(f)); bad=0
+    for i,l in enumerate(open(f)):
+        try: d=json.loads(l)
+        except Exception as e: bad+=1; print(i,'INVALID',str(e)[:60]); continue
+        t=d.get('type'); u=(d.get('uuid') or '')[:8]; p=(d.get('parentUuid') or '')[:8]; txt=''
+        m=d.get('message')
+        if isinstance(m,dict):
+            c=m.get('content')
+            if isinstance(c,str): txt=c[:60]
+            elif isinstance(c,list): txt=' '.join((b.get('text') or '')[:60] for b in c if isinstance(b,dict))
+        print(f'{i:3} {t:12} uuid={u} parent={p} sid={(d.get("sessionId") or "")[:8]} {txt!r}')
+    print('invalid lines:',bad)
+PY

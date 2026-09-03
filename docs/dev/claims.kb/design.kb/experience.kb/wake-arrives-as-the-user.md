@@ -8,6 +8,10 @@ authority: >-
   "Message your other Claude Code sessions" says of SendMessage that
   "Claude Code tells B's Claude that the message came from another
   session, not from you"
+verify: |-
+  bin/two-resumes-one-session prints the transcript chain: every
+  argument to `-p --resume` appears as a `user` line carrying the
+  prompt verbatim. Run 2026-09-03 against claude 2.1.259.
 ---
 
 # Injected wake text arrives wearing the owner's authority

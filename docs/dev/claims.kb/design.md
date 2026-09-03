@@ -7,6 +7,7 @@ non-claim-tokens:
   - CWD
   - DAG
   - HTML
+  - JSONL
   - NOTE
   - QUESTION
   - S3
