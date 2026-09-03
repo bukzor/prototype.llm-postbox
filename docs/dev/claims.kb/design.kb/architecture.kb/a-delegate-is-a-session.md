@@ -1,26 +1,19 @@
 ---
-label: IS_SESSION
-standing: agent
-todo: true
-authority: >-
-  the person's words, 2026-09-01: "Monitor plus `claude --resume`
-  covers all the cases i can think of"; "I refuse to use `claude
-  agent`"; signed agent because the person named the pieces and did not
-  rule the whole
-why:
-  - ../goals.kb/a-delegate-lacks-nothing-a-session-has.md
-  - ../requirements.kb/never-the-agent-tool.md
-  - ../mission.kb/delegation-is-avoided-today.md
+label: WORKER_SESSION
+standing: user
+authority: 'owner ruling 2026-08-29: a worker is "an ordinary
+  claude-code session, just with instructions to leave its result in a
+  postbox".'
 ---
 
-# A delegate is a session
+# A worker is an ordinary session with postbox instructions
 
-A delegate is a claude-code session, started and resumed through the
-claude command line and never through the built-in agent tool. PARITY
-then holds by construction: whatever the person can do to a session
-they can do to a delegate, with the same commands, and NO_AGENT_TOOL is
-satisfied by never creating an agent at all.
+A worker is an ordinary claude-code session, given instructions to
+leave its result in a postbox. There is no worker runtime and nothing
+to install: what makes a session a worker is the prompt it started
+with.
 
-Declined: a bespoke harness re-implementing each session capability,
-which would re-pay every capability the session already has and still
-miss the next one the person reaches for.
+Two things follow. Declining AGENTS_INTERFACE cost the design nothing,
+since that interface was never what made a worker a worker. And a
+worker is dead in exactly the way any ordinary session is dead, which
+is the fact WAKE_DEAD_ONLY leans on.
