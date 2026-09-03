@@ -1,24 +1,15 @@
 --- # workaround: anthropics/claude-code#13003
 git-caution: personal
-triggers:
-  - when: creating or maintaining a .kb/ collection
-    read: skill://llm-kb
+requires:
+  - Skill(llm-design-kb)
 ---
 
-# prototype.llm-postbox
+# agent-harness
 
-House convention for inter-session agent collaboration: messages are
-files; delivery is a Read at a task boundary. Replaces
-SendMessage/ListAgents (owner-vetoed) for cross-session traffic.
+A mechanism by which one agent creates, constrains, observes, converses
+with, and judges other agents. Nothing is built yet; this is a design
+sitting.
 
-Status: fully ruled (2026-08-28..29); nothing implemented.
-
-Re-entry for a cold agent: `docs/dev/claims.kb/design.md` — the claim
-ledger (`skill://llm-claims-kb`): the commitments with their standing,
-the owner's vetoes as struck claims. The struck claims are
-load-bearing, not debris.
-
-## Current Work
-
-Check `.claude/todo.md` for active efforts. Load `Skill("llm-subtask")`
-for maintenance.
+The design is a claim ledger: start at `docs/dev/claims.kb/design.md`.
+The policies binding this work, including the order in which existing
+mechanisms may be examined, are `docs/dev/claims.kb/technical-policy.md`.
