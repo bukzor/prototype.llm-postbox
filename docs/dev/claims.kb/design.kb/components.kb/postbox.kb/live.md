@@ -6,8 +6,8 @@ ontology:
   - wake
   - wake phrase
 why:
-  - mutable-until-read.md
-  - trust.md
+  - ../../goals.kb/mutable-until-read.md
+  - ../../goals.kb/trust.md
 ---
 
 # A live channel wakes; the postbox carries

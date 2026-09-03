@@ -3,8 +3,8 @@ label: SEND_KEYS
 standing: user
 verdict: declined
 why:
-  - wake-arrives-as-the-user.md
-  - ../mutable-until-read.md
+  - ../../../experience.kb/wake-arrives-as-the-user.md
+  - ../../../goals.kb/mutable-until-read.md
 ---
 
 # tmux send-keys as a content transport

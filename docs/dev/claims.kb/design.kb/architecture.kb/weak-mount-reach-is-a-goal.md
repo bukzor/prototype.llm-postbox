@@ -4,6 +4,7 @@ standing: open
 why:
   - single-reader-inboxes.md
   - the-address-is-a-path.md
+  - substrate-is-local-for-now.md
 ---
 
 # Weak-mount reach is a goal

@@ -7,7 +7,7 @@ authority: 'owner, 2026-08-28; revisit condition effectively none: "I
   Even if they do, i don''t trust they won''t add other problems (for
   me)."'
 why:
-  - receiving-is-ungated.md
+  - ../../experience.kb/receiving-is-ungated.md
 ---
 
 # SendMessage / ListAgents as the transport

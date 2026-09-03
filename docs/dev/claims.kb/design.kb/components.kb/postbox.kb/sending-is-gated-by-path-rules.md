@@ -2,7 +2,7 @@
 label: SEND_GATED
 standing: agent
 why:
-  - ../topology.kb/the-address-is-a-path.md
+  - ../../architecture.kb/the-address-is-a-path.md
 ---
 
 # Sending is gated by path rules

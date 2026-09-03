@@ -2,7 +2,7 @@
 label: RETENTION
 standing: open
 why:
-  - mutable-until-read.md
+  - ../../goals.kb/mutable-until-read.md
 ---
 
 # The read record is permanent

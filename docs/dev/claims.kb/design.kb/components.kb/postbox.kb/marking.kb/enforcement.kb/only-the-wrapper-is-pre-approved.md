@@ -5,7 +5,7 @@ todo: true
 authority: 'owner ruling 2026-08-29: the wrapper "is preapproved for
   Bash(). Note that `claude` is not."'
 why:
-  - ../../trust.kb/the-owner-is-the-only-boundary.md
+  - ../../../../goals.kb/trust.kb/the-owner-is-the-only-boundary.md
 ---
 
 # Only the wrapper is pre-approved; bare `claude` is not

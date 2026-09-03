@@ -2,7 +2,7 @@
 label: DRAFT_STAGE
 standing: agent
 why:
-  - mutable-until-read.md
+  - ../../goals.kb/mutable-until-read.md
 ---
 
 # Drafts restore the pre-read window

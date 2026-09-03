@@ -2,7 +2,7 @@
 label: ROLES_POSITIONAL
 standing: bare
 why:
-  - either-a-human-or-an-agent-starts-a-worker.md
+  - either-a-human-or-an-agent-starts-a-delegate.md
 ---
 
 # Driver and orchestrator name a position, not a kind of session

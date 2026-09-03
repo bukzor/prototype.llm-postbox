@@ -2,7 +2,7 @@
 label: READ_MOVE
 standing: agent
 why:
-  - mutable-until-read.md
+  - ../../goals.kb/mutable-until-read.md
 ---
 
 # Consumption is a move into `read/`

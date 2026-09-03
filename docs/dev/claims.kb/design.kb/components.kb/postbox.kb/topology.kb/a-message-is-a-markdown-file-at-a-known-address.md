@@ -2,7 +2,7 @@
 label: MESSAGE_SHAPE
 standing: agent
 why:
-  - the-address-is-a-path.md
+  - ../../../architecture.kb/the-address-is-a-path.md
 ---
 
 # A message is a markdown file at a known address

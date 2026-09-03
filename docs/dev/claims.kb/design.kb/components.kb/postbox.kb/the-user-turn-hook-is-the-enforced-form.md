@@ -2,8 +2,8 @@
 label: TURN_HOOK
 standing: agent
 why:
-  - delivery-is-a-read-at-a-task-boundary.md
-  - notification-carries-the-pointer.md
+  - ../../goals.kb/delivery.kb/delivery-is-a-read-at-a-task-boundary.md
+  - ../../goals.kb/delivery.kb/notification-carries-the-pointer.md
 ---
 
 # The user-turn hook is the enforced form

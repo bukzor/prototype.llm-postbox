@@ -2,8 +2,8 @@
 label: WAKE_PHRASE
 standing: bare
 why:
-  - ../mutable-until-read.md
-  - wake-arrives-as-the-user.md
+  - ../../../goals.kb/mutable-until-read.md
+  - ../../../experience.kb/wake-arrives-as-the-user.md
 ---
 
 # A live channel carries the fixed wake phrase, nothing else

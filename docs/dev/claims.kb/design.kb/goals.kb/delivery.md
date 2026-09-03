@@ -8,7 +8,8 @@ ontology:
   - pointer
 why:
   - mutable-until-read.md
-  - topology.md
+  - output-is-offered-never-forced.md
+  - conversation-is-not-result.md
 ---
 
 # Delivery is the recipient's act

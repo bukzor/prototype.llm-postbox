@@ -8,7 +8,7 @@ stale-when: a paired inline callout form landing in the renderers this
   convention targets, which would remove the reason the marker is
   self-closing
 why:
-  - trust.md
+  - ../../goals.kb/trust.md
 ---
 
 # Marking agent-authored text where a from-header cannot reach

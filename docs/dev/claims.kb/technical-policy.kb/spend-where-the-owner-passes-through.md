@@ -1,8 +1,9 @@
 ---
 label: SPEND_AT_THE_OWNER
 standing: agent
+force: should
 why:
-  - the-owner-is-the-only-boundary.md
+  - ../design.kb/goals.kb/trust.kb/the-owner-is-the-only-boundary.md
 ---
 
 # Spend where the owner passes through
@@ -14,7 +15,7 @@ points:
 - SEND_GATED's Ask prompt, which shows a cross-scope message as a diff
   before it is written;
 - the keybinding the owner presses to hand work to a stopped session
-  (`../live.kb/wake-arrives-as-the-user.md`).
+  (WAKE_WEARS_AUTHORITY).
 
 Both hold because the agent is not the one enforcing them. Everything
 else should be built to a guard's standard — cheap, obvious, and not

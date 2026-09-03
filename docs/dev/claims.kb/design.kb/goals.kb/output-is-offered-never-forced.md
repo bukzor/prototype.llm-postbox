@@ -1,5 +1,5 @@
 ---
-label: PULL
+label: OFFERED
 standing: user
 authority: >-
   user ruling, 2026-09-01: "What it means to say is that all output is
