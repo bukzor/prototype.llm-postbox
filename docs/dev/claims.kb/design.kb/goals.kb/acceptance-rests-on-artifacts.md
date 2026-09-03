@@ -9,6 +9,7 @@ why:
   - delegation-is-an-exchange.md
   - ../mission.kb/delegator-usually-outranks.md
   - trust.md
+  - ../mission.kb/delegate-is-honest-and-fallible.md
 ---
 
 # Acceptance rests on artifacts, never on the delegate's claims

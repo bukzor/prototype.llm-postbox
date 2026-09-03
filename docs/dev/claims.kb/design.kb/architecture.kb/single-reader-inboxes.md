@@ -1,5 +1,8 @@
 ---
 label: SINGLE_READER
+why:
+  - ../mission.kb/composition-is-out-of-scope.md
+  - ../../technical-policy.kb/smallest-conforming-shape.md
 standing: agent
 ---
 

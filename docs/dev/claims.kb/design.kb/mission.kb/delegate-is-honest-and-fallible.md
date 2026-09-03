@@ -1,5 +1,7 @@
 ---
 label: HONEST
+why:
+  - ../goals.kb/trust.kb/an-agent-that-writes-scripts-is-already-inside.md
 standing: user
 authority: >-
   user ruling, 2026-09-01: the threat-model rule confirmed under "All

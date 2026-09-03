@@ -3,6 +3,7 @@ label: SEND_GATED
 standing: agent
 why:
   - ../../architecture.kb/the-address-is-a-path.md
+  - ../../goals.kb/trust.kb/the-owner-is-the-only-boundary.md
 ---
 
 # Sending is gated by path rules

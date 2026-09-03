@@ -5,8 +5,6 @@ authority: >-
   user ruling, 2026-09-01: "That's true for now. The door should be
   open to s3fs plus lambda or something in future, but that's a
   fourth-order concern for today."
-why:
-  - ../goals.kb/the-record-outlives-the-job.md
 ---
 
 # The substrate is this machine, and nothing forecloses another

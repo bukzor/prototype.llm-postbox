@@ -1,6 +1,6 @@
 ---
 label: CAPTURE_TRAILING
-standing: user
+standing: bare
 why:
   - an-unclosed-element-takes-later-siblings.md
 ---

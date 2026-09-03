@@ -15,4 +15,5 @@ and ruled on 2026-08-28 and 29 before it was folded in here. It hangs
 from CHANNEL_IS_POSTBOX and answers this question only for that
 channel. The dispatcher, the job record, confinement, and the grader
 have no component yet, because the architecture's own question is
-still open.
+still open. Settled when every architecture claim has the component
+that implements it.

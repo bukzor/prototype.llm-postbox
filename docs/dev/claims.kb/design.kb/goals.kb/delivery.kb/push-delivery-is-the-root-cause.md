@@ -3,6 +3,7 @@ label: PUSH_ROOT_CAUSE
 standing: agent
 why:
   - ../../experience.kb/receiving-is-ungated.md
+  - ../../experience.kb/push-messaging-bit-three-ways.md
 ---
 
 # The vetoed failure modes are one choice: push-into-context

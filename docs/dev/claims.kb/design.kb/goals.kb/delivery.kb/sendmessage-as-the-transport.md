@@ -8,19 +8,14 @@ authority: 'owner, 2026-08-28; revisit condition effectively none: "I
   me)."'
 why:
   - ../../experience.kb/receiving-is-ungated.md
+  - ../../experience.kb/push-messaging-bit-three-ways.md
 ---
 
 # SendMessage / ListAgents as the transport
 
 The built-in push transport, declined on the owner's three grounds,
-quoted:
-
-1. "agents often decide they want to send messages for inane reasons,
-   with zero-or-negative benefit, and substantial costs"
-2. "agents recieving messages often get very distracted from their
-   task"
-3. "there's **no way** to /rewind to before a message was
-   sent/recieved short of /claude-surgery"
+which stand as lived failures in PUSH_GROUNDS: inane sends, recipient
+distraction, and unrewindable receipt.
 
 PUSH_ROOT_CAUSE reads all three as one choice, push-into-context;
 RECEIVE_UNGATED is why no configuration rescues it. Push also

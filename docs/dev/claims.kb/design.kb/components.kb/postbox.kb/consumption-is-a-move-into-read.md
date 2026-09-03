@@ -3,6 +3,7 @@ label: READ_MOVE
 standing: agent
 why:
   - ../../goals.kb/mutable-until-read.md
+  - ../../architecture.kb/single-reader-inboxes.md
 ---
 
 # Consumption is a move into `read/`
