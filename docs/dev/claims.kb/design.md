@@ -1,6 +1,19 @@
 ---
 label: DESIGN
 standing: agent
+non-claim-tokens:
+  - API
+  - CLI
+  - CWD
+  - DAG
+  - HTML
+  - NOTE
+  - QUESTION
+  - S3
+  - TODO
+  - UI
+  - UUID
+  - XDG
 ontology:
   - mission
   - goals

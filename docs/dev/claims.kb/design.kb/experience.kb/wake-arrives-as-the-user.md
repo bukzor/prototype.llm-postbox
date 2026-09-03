@@ -18,7 +18,7 @@ the prompt, and typed keys are typed keys, so the transcript shows the
 owner saying it. A transport that lets an agent speak as the owner is
 an authority hazard independent of whatever content it carries.
 
-The built-in SendMessage transport is the contrast: it attributes the
-message to the sending session and forbids it to approve anything.
+The built-in SendMessage transport is the contrast: it attributes what
+it carries to the sending session and forbids it to approve anything.
 The hazard is specific to the resume and keystroke routes, which are
 the ones a wake uses.

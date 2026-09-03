@@ -10,25 +10,25 @@ authority: >-
 
 # Receiving is gated by the owner's settings, never by the recipient's Claude
 
-In the built-in push transports, a sent message reaches the recipient
-without the recipient's Claude choosing the moment:
+In the built-in push transports, what one session sends reaches the
+recipient without the recipient's Claude choosing the moment:
 
 - **Subagents and teammates within a session**: delivery is automatic.
-  "When teammates send messages, they're delivered automatically to
-  recipients. The lead doesn't need to poll for updates." No setting is
-  consulted on the receiving side; in auto mode a classifier reviews
-  each message before delivery, which is a safety filter, not consent.
+  "delivered automatically to recipients. The lead doesn't need to
+  poll for updates." No setting is consulted on the receiving side; in
+  auto mode a classifier reviews each arrival before delivery, which is
+  a safety filter, not consent.
 - **Peer sessions**, since v2.1.224: the owner can set
   `crossSessionInbound` to `accept`, `hold`, or `refuse`, and the
-  default holds a message for the owner's approval when the two
-  sessions' permission classes differ. A held message shows as a
-  notice and reaches Claude only when the owner approves.
-- **An accepted message** is read "between tool calls during an active
+  default holds what arrives for the owner's approval when the two
+  sessions' permission classes differ. Held text shows as a notice
+  and reaches Claude only when the owner approves.
+- **Accepted text** is taken in "between tool calls during an active
   turn", or starts a new turn if the session is idle, and "counts toward
   usage like a prompt you type."
 
 So the sender's action alone spends the recipient's context and
-attention wherever the message is accepted, and where it is held the
+attention wherever the text is accepted, and where it is held the
 cost moves to the owner as a dialog. In neither case does the
 recipient's Claude pick a task boundary.
 
