@@ -14,7 +14,7 @@ Restarting a session while an agent is in stopped-by-user status leaves
 that agent unresumable.
 
 The mechanism, from the person's own tooling: the harness persists the
-stop as a flag in the agent's metadata and reads it on restart as a
+stop as a flag in the agent's metadata and treats it on restart as a
 permanent verdict. An interrupt meant as "pause and redirect" is
 recorded as "terminated by owner", and nothing on disk
 distinguishes the two intents. The person's unstop tool exists to clear

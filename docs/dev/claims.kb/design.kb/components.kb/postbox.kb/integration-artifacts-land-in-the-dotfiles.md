@@ -1,5 +1,7 @@
 ---
 label: INTEGRATION_HOME
+why:
+  - ../../architecture.kb/a-delegate-is-a-session.md
 standing: user
 authority: 'owner ruling 2026-08-29: the postbox is its own sub-project repo.'
 ---

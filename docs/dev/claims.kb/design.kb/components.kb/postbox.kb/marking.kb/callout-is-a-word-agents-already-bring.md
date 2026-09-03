@@ -1,5 +1,7 @@
 ---
 label: BROUGHT_WORD
+why:
+  - a-callout-is-a-blockquote.md
 standing: user
 authority: 'owner ruling 2026-08-29: "\"callout\" is also ghm''s
   presentation word. … we don''t need to teach agents what \"voice\" is,

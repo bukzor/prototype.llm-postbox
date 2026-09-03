@@ -8,12 +8,15 @@ authority: >-
 why:
   - delegation-is-an-exchange.md
   - ../mission.kb/delegator-usually-outranks.md
+  - trust.md
 ---
 
 # Acceptance rests on artifacts, never on the delegate's claims
 
 A job's claims and its artifacts are separable, and acceptance rests on
-the artifacts. Whatever grades a job is beyond that job's reach.
+the artifacts. Whatever grades a job is beyond that job's reach, in
+TRUST's sense: outside the path an honest delegate would take, not
+outside what a delegate with a shell could reach.
 
 A judgment written against the spec the job was given is an artifact.
 So a job whose deliverable is a judgment, the higher-grade-on-demand

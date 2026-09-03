@@ -10,6 +10,7 @@ why:
   - delegation-is-an-exchange.md
   - ../mission.kb/delegate-is-honest-and-fallible.md
   - ../experience.kb/stop-survives-restart.md
+  - delivery.kb/interruption-is-the-receivers-choice.md
 ---
 
 # Every lifecycle control is reliable, and the hard ones need no cooperation
@@ -24,7 +25,11 @@ interrupt is not a cancellation.
   delegate is detectable and reapable.
 - **Soft controls** may use a cooperative channel the delegate watches:
   interrupt, redirect, message. This is an optional layer over the hard
-  floor, and a delegate that does not cooperate is still killable.
+  floor, and a delegate that does not cooperate is still killable. The
+  polarity is OPT_IN_INTERRUPT's: the delegate chooses the moment it
+  takes a soft control in, and no mechanism hands that choice to the
+  sender. The person, who owns the terminal, interrupts a session
+  directly, as they always could.
 - **An interrupt is not a cancellation.** The record distinguishes
   them, and an interrupted delegate resumes on demand, across restarts
   of whatever dispatched it.

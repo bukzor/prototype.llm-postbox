@@ -8,6 +8,7 @@ authority: >-
 why:
   - ../goals.kb/lifecycle-without-cooperation.md
   - ../goals.kb/conversation-is-not-result.md
+  - ../goals.kb/delivery.kb/interruption-is-the-receivers-choice.md
 ---
 
 # An inbox is the optional cooperative channel
@@ -19,4 +20,7 @@ already provides. It is optional: a delegate that does not watch its
 inbox is still killable and reapable by the hard controls.
 
 How the delegate watches is a components question; the person's sketch
-is a monitor over an inotify wait on the inbox directory.
+is a monitor over an inotify wait on the inbox directory, which is
+OPT_IN_INTERRUPT's mechanism with the same polarity: the delegate arms
+it, so interrupt power stays with the receiver. The inbox as a mailbox
+on disk is POSTBOX.

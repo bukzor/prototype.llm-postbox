@@ -16,5 +16,6 @@ shape is preferred over another. Each carries `force:` (`must` /
 `should`) and a `why:` naming what it serves.
 
 The two `must` policies fix the mode of this sitting. The `should`
-policies are the heuristics the person confirmed on 2026-09-01; they
-prefer without forbidding, and deviating takes recorded justification.
+policies are the heuristics the person confirmed on 2026-09-01, plus
+SPEND_AT_THE_OWNER from the postbox design; they prefer without
+forbidding, and deviating takes recorded justification.

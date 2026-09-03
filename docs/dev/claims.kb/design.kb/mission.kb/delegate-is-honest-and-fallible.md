@@ -11,7 +11,7 @@ authority: >-
 
 The delegate is capable, well-intentioned, and fallible. It is not an
 adversary. The adversary, insofar as there is one, is text: material a
-delegate was asked to examine that reads as instruction.
+delegate was asked to examine that presents itself as instruction.
 
 This sets the engineering budget. Defences catch honest error: a wrong
 turn, a wrong claim. A delegate actively trying to escape its

@@ -1,5 +1,5 @@
 ---
-label: DESIGN_FIRST
+label: BUILD_LATER
 standing: user
 force: must
 authority: >-

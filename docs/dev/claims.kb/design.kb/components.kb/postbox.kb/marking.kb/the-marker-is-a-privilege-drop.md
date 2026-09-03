@@ -1,5 +1,7 @@
 ---
 label: DROP
+why:
+  - ../../../experience.kb/wake-arrives-as-the-user.md
 standing: user
 authority: 'owner ruling 2026-08-29: "this callout is a privilege
   _drop_ so too much content going into it is no threat, just a minor

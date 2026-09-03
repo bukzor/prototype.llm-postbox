@@ -19,11 +19,14 @@ mechanism exists so they stop avoiding it, for three uses at once.
 
 A **delegator** is whoever dispatches work to another agent and holds
 authority over it: the person, or an orchestrating agent, and often both
-at once. A **delegate** is the agent the work is dispatched to.
+at once. A **delegate** is the agent the work is dispatched to. Both
+name a position in an exchange, not a kind of session
+(ROLES_POSITIONAL).
 
 This rung's prior is `experience.md`: the mission rests on the lived
 failures and speaks of them by that name.
 
-The claims in `mission.kb/` are the person's own testimony from the
-2026-09-01 alignment pass, signed by them; the two agent-signed ones
-are inferences from that testimony, open to veto.
+The claims in `mission.kb/` are the person's own rulings, from the
+2026-09-01 alignment pass and from the postbox design of 2026-08-28
+and 29, signed by them; the agent-signed and bare ones are inferences
+from that testimony, open to veto.

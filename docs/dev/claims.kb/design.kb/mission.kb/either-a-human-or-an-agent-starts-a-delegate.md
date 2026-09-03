@@ -1,5 +1,5 @@
 ---
-label: WORKER_START
+label: STARTER
 standing: user
 authority: 'owner ruling 2026-08-29, on what runs a worker: "Human or
   agent could. In fact, human might start the agent but agent may revive
@@ -9,9 +9,9 @@ why:
   - one-person-and-their-agents.md
 ---
 
-# Either a human or an agent may start a worker, and either may revive it
+# Either a human or an agent may start a delegate, and either may revive it
 
-Nothing about a worker's origin is fixed. A human may start a session
+Nothing about a delegate's origin is fixed. A human may start a session
 an agent later resumes, an agent may start one a human takes over, and
 a single session may change hands more than once in its life.
 

@@ -38,10 +38,13 @@ auxiliary theory of evidence the rungs rest on and do not argue:
 | `components` | How do we implement the architecture? |
 | `deliverables` | How do we build the components? |
 
-Mission, goals, and requirements are filled and mostly user-signed.
-Architecture holds the open question this project exists to answer and
-the few shape decisions already ruled. Components and deliverables are
-empty: nothing is built.
+Mission, goals, and requirements are filled and mostly user-signed;
+goals holds two nested theories, `trust` and `delivery`, folded in from
+the postbox design. Architecture holds the open question this project
+exists to answer and the shape decisions already ruled. Components
+holds one component designed in full, the postbox, hanging from an
+agent-signed architecture claim. Deliverables is empty: nothing is
+built.
 
 Priors are a DAG, not a ladder: a claim's `why:` names whatever claims
 it would be revisited over, one rung up or four.

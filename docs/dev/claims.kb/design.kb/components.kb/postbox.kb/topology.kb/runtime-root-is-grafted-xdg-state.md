@@ -1,5 +1,7 @@
 ---
 label: RUNTIME_ROOT
+why:
+  - ../../../architecture.kb/the-address-is-a-path.md
 standing: user
 authority: 'owner rulings 2026-08-29: cwd-grafted XDG layout; "ah no
   please use the correct thing. state is good."'

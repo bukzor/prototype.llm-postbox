@@ -7,6 +7,8 @@ ontology:
   - record
   - artifact
   - channel
+  - message
+  - read
 why:
   - mission.md
 ---
@@ -30,8 +32,15 @@ Words this rung stipulates:
 - an **artifact** is what a job produces at an address, as distinct from
   what it claims about itself;
 - a **channel** is a path by which a delegator and a running delegate
-  exchange messages, distinct from the path by which artifacts return.
+  exchange messages, distinct from the path by which artifacts return;
+- a **message** is what travels a channel, as distinct from an
+  artifact;
+- a message is **read** at the moment its recipient takes it into
+  context, which is the moment it stops being the sender's
+  (MUTABLE_UNTIL_READ).
 
 The mechanism is good exactly as far as it improves an exchange rate
 (EXCHANGE); every other goal here is a way of improving one of its
-terms.
+terms. Two nested theories argue in their own words: `trust.md`, what
+every mechanism here is answerable to, and `delivery.md`, how a
+message moves.

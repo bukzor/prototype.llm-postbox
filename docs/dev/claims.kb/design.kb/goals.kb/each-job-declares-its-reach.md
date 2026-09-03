@@ -11,6 +11,7 @@ why:
   - delegation-is-an-exchange.md
   - ../mission.kb/delegate-is-honest-and-fallible.md
   - ../experience.kb/distracted-by-cwd.md
+  - trust.md
 ---
 
 # Each job declares its reach, and something else enforces it
@@ -30,6 +31,10 @@ Prevents: jurisdiction drift, where the delegate reaches material
 outside its task and treats it as evidence, diligently and wrongly
 (DISTRACTED is the lived instance); and grader capture, where the
 delegate modifies whatever evaluates it and then passes.
+
+"Enforces" reads under TRUST: the enforcement is a mechanism an honest
+delegate cannot stumble past, and it claims nothing against one that
+edits its way around it.
 
 Declined: asking the delegate to stay within bounds, which under HONEST
 would usually work and could never be audited.
