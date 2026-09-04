@@ -3,7 +3,7 @@ label: WAKE_DEAD_ONLY
 standing: agent
 why:
   - live-channels-carry-the-wake-phrase-only.md
-  - ../../../architecture.kb/a-delegate-is-a-session.md
+  - ../../../architecture.kb/delegate.kb/a-session.md
   - ../../../goals.kb/trust.kb/the-design-is-foolproofing-not-security.md
   - ../../../experience.kb/concurrent-resumes-fork-the-transcript.md
 ---

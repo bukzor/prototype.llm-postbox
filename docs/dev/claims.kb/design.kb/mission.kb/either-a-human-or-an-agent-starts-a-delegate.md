@@ -5,7 +5,7 @@ authority: 'owner ruling 2026-08-29, on what runs a worker: "Human or
   agent could. In fact, human might start the agent but agent may revive
   it, or vice versa."'
 why:
-  - ../architecture.kb/a-delegate-is-a-session.md
+  - ../architecture.kb/delegate.kb/a-session.md
   - one-person-and-their-agents.md
 ---
 

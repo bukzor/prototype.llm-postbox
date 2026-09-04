@@ -6,7 +6,7 @@ authority: >-
   Monitor plus `claude --resume` covers all the cases i can think of."
 why:
   - ../goals.kb/lifecycle-without-cooperation.md
-  - a-delegate-is-a-session.md
+  - delegate.kb/a-session.md
   - optional-inbox.md
 ---
 

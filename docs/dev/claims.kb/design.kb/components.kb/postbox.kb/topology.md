@@ -19,3 +19,7 @@ trivial, a grafted XDG root and a legible filename, so that every
 transport a filesystem can wear stays in play. The two shape
 constraints this rests on, one reader per inbox (SINGLE_READER) and
 every address a path (PATH_ADDRESS), sit on the architecture rung.
+
+The root question is settled: RUNTIME_ROOT won, and the five declined
+roots stay in `topology.kb/` with their verdicts. MESSAGE_SHAPE is the
+other commitment here, the filename.

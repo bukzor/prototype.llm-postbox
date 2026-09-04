@@ -10,7 +10,7 @@ stale-when: >-
   claim that belongs on a rung above, or implementation detail with no
   contestable standing
 why:
-  - ../architecture.kb/the-channel-is-the-postbox.md
+  - ../architecture.kb/channel.kb/the-postbox.md
   - ../goals.kb/delivery.md
   - ../goals.kb/trust.md
   - ../goals.kb/mutable-until-read.md

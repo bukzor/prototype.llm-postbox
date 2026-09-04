@@ -5,8 +5,6 @@ verdict: declined
 authority: 'owner veto, verbatim, 2026-08-28: "I hate the `claude agents`
   interface. Like, a lot. … let''s keep it simple: I refuse to use it."
   Revisit condition: none foreseeable (standing veto).'
-why:
-  - a-delegate-is-a-session.md
 ---
 
 # The `claude agents` / Agent-tool interface as the worker channel
